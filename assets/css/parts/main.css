@@ -307,6 +307,25 @@ input[type="submit"]:disabled {
     padding: 80px 0;
 }
 
+/* many */
+
+.country-wrapper,
+.city-wrapper,
+.place-wrapper {
+	display: inline-block;
+	vertical-align: top;
+}
+[data-title]::before {
+	content: attr(data-title);
+	font-size: 1.2em;
+}
+.item-active {
+	color: #f33;
+}
+.item-hidden {
+	display: none;
+}
+
 /* location header */
 
 .location-header {
@@ -377,6 +396,15 @@ input[type="submit"]:disabled {
 
 .location-header-list-cities-list-object {
     color: #82a9e0;
+    cursor: pointer;
+}
+
+.location-header-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 10px;
     cursor: pointer;
 }
 
