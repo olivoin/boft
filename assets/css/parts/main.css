@@ -307,6 +307,12 @@ input[type="submit"]:disabled {
     padding: 80px 0;
 }
 
+/* many */
+
+.item-hidden {
+	display: none;
+}
+
 /* location header */
 
 .location-header {
@@ -348,10 +354,10 @@ input[type="submit"]:disabled {
     z-index: 1;
     visibility: hidden;
     opacity: 0;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px -5px rgba(0,0,0,.3);
+    border-radius: 12px;
+    box-shadow: 0px 0px 0px 1px #dedede;
     padding: 30px;
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 .location-header.active .location-header-list {
@@ -371,12 +377,27 @@ input[type="submit"]:disabled {
     margin-bottom: 24px;
 }
 
-.location-header-list-counteries-list-object.active {
+.location-header-list-counteries-list-object {
+    font-size: 16px;
+}
+
+.location-header-list-counteries-list-object.item-active {
     color: #a5a5a5;
 }
 
 .location-header-list-cities-list-object {
     color: #82a9e0;
+    cursor: pointer;
+    padding-right: 25px;
+    font-size: 18px;
+}
+
+.location-header-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 10px;
     cursor: pointer;
 }
 
