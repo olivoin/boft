@@ -1,3 +1,7 @@
+*{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;margin: 0; padding: 0; border: none; outline: none;}
+
+li {list-style-type: none;}
+
 @font-face {
     font-family: "Proxima Nova";
     font-weight: normal;
@@ -145,6 +149,10 @@ input[type="submit"]:disabled {
 
 .wrap {
     width: 1100px;
+}
+
+.hor-wrap {
+    margin: auto;
 }
 
 .dis-flex {
@@ -488,4 +496,31 @@ input[type="submit"]:disabled {
     height: 18px;
     background: url(../images/clock.png) center center no-repeat;
     background-size: contain;
+}
+
+/* media quaries */
+
+@media screen and (min-width:1024px) and (max-width:1366px) {
+    
+    .col-1-8,
+    .row .col-1-8{
+        width: 25%;
+    }
+    
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+    
+    .col-1-8,
+    .col-2-8,
+    .col-3-8,
+    .col-4-8,
+    .col-5-8,
+    .col-6-8,
+    .col-7-8,
+    .row > .col-2-8{
+        width: 100%;
+        margin-right: 0;
+    }
+    
 }

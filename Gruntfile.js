@@ -7,7 +7,6 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'assets/js/libs/*.js',
-                    'assets/js/vendor/*.js',
                     'assets/js/parts/*.js'
                 ],
                 dest: 'assets/js/production.js'
@@ -30,10 +29,7 @@ module.exports = function(grunt) {
           target: {
             files: {
               'assets/css/production.css': [
-                  'assets/css/libs/*.css',
-                  'assets/css/parts/*.css',
-                  'assets/css/responsive/*.css',
-                  'assets/css/vendor/*.css'
+                  'assets/css/parts/*.css'
               ],
             },
           },
@@ -59,19 +55,13 @@ module.exports = function(grunt) {
                 showProgress: true,
                 stopOnImageError: true,
             },
-            /*compress: {
+            compress: {
                 src: ['*.png', '*.jpg'],
                 cwd: 'assets/images/',
                 dest: 'assets/images/',
                 expand: true
-            },*/
-            compress2: {
-                src: ['**/*.{png,jpg,jpeg}'],
-                cwd: '../../uploads/',
-                dest: '../../uploads/',
-                expand: true,
             },
-            
+                        
           },
         
         watch: {
