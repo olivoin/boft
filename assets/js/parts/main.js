@@ -8,11 +8,12 @@ $(document).ready(function() {
         $(this).closest('.location-header').toggleClass('active');
     });
     
-    $('.location-header-list-cities-list-object').click(function() {
+    $('.location-header-list').on('click', '.location-header-list-cities-list-object', function() {
         var cityName = $(this).html();
         $('.location-header').toggleClass('active');
         $('.location-header-title').text(cityName);
-    });
+        console.log(cityName);
+    }); 
     
     // json
     
@@ -165,6 +166,7 @@ $(document).ready(function() {
 		}
 	}
 });
+    
 // console.log(data);
     
 });
