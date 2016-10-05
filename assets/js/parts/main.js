@@ -9,7 +9,9 @@ $(document).ready(function() {
     });
     
     $('.location-header-list-cities-list-object').click(function() {
+        var cityName = $(this).html();
         $('.location-header').toggleClass('active');
+        $('.location-header-title').text(cityName);
     });
     
     // json
