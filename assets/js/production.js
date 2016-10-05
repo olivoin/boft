@@ -13,11 +13,15 @@ $(document).ready(function() {
     });
     
     $('.location-header-list').on('click', '.location-header-list-cities-list-object', function() {
-    var cityName = $(this).html();
-    $('.location-header').toggleClass('active');
-    $('.location-header-title').text(cityName);
-    console.log(cityName);
-}); 
+        var cityName = $(this).html();
+        $('.location-header').toggleClass('active');
+        $('.location-header-title').text(cityName);
+        $('body,html').animate({ scrollTop: $('.location-list').offset().top }, 500);
+    }); 
+    
+    $('.location-header-list').on('click', '.location-header-list-counteries-list-object', function() {
+        $('body,html').animate({ scrollTop: $('.location-header-list-cities-list').offset().top }, 500);
+    }); 
     
     // json
     
